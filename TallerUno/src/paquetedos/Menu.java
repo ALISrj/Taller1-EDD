@@ -58,28 +58,9 @@ public class Menu {
                     }
                     case 6 -> {
                         Ejecutor.burbuja(arreglo);
-                        System.out.print("\nAquí tienes tu arreglo ordenado mediante Burbuja:\n> [");
-                        for (int i = 0; i < arreglo.length; i++) {
-                            if (i != arreglo.length - 1) {
-                                System.out.print(" " + arreglo[i] + ",");
-                            } else {
-                                System.out.print(" " + arreglo[i]);
-                            }
-                        }
-                        System.out.print(" ]\n");
                     }
-
                     case 7 -> {
                         Ejecutor.quickSort(arreglo, 0, arreglo.length - 1);
-                        System.out.print("\nAquí tienes tu arreglo ordenado mediante QuickSort:\n> [");
-                        for (int i = 0; i < arreglo.length; i++) {
-                            if (i != arreglo.length - 1) {
-                                System.out.print(" " + arreglo[i] + ",");
-                            } else {
-                                System.out.print(" " + arreglo[i]);
-                            }
-                        }
-                        System.out.print(" ]\n");
                     }
                     default ->
                         bandera = false;

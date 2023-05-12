@@ -72,6 +72,16 @@ public class Ejecutor {
                 }
             }
         }
+        System.out.print("\nAquí tienes tu arreglo ordenado mediante Burbuja:\n> [");
+        for (int i = 0; i < array.length; i++) {
+            if (i != array.length - 1) {
+                System.out.print(" " + array[i] + ",");
+            } else {
+                System.out.print(" " + array[i]);
+            }
+        }
+        System.out.print(" ]\n");
+
     }
 
     public static void quickSort(int arr[], int begin, int end) {
@@ -80,6 +90,16 @@ public class Ejecutor {
             quickSort(arr, begin, partitionIndex - 1);
             quickSort(arr, partitionIndex + 1, end);
         }
+
+        System.out.print("\nAquí tienes tu arreglo ordenado mediante QuickSort:\n> [");
+        for (int i = 0; i < arr.length; i++) {
+            if (i != arr.length - 1) {
+                System.out.print(" " + arr[i] + ",");
+            } else {
+                System.out.print(" " + arr[i]);
+            }
+        }
+        System.out.print(" ]\n");
     }
 
     public static int partition(int arr[], int begin, int end) {
