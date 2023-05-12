@@ -1,3 +1,3 @@
 # Taller1-EDD
 
-**Alexito y Cbejasito**
+Sebastián "cbhas" Calderón & Alex "ALISrj" Ramírez
