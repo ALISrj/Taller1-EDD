@@ -8,7 +8,7 @@ public class Ejecutor {
         Scanner entrada = new Scanner(System.in);
         try {
 
-            System.out.println("\nIngrese el tamaño del arreglo:");
+            System.out.print("\nIngrese el tamaño del arreglo:\n> ");
             int tamanio = entrada.nextInt();
 
             int[] arr = new int[tamanio];
@@ -24,13 +24,13 @@ public class Ejecutor {
     public static void insertar(int[] x) {
         Scanner entrada = new Scanner(System.in);
         for (int i = 0; i < x.length; i++) {
-            System.out.println("\nIngresa el elemento de la posicion: " + i);
+            System.out.print("\nIngresa el elemento de la posicion " + i + ":\n> ");
             x[i] = entrada.nextInt();
         }
     }
 
     public static void presentar(int[] x) {
-        System.out.print("\nAquí tienes tu arreglo:\n[");
+        System.out.print("\nAquí tienes tu arreglo:\n> [");
         for (int i = 0; i < x.length; i++) {
             if (i != x.length - 1) {
                 System.out.print(" " + x[i] + ",");
